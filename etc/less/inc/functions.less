@@ -1,0 +1,236 @@
+.corpo-fonte(@e) {
+  font-weight: @e;
+}
+
+.font-thin() {
+  .corpo-fonte(100);
+}
+
+.font-extra-light() {
+  .corpo-fonte(200);
+}
+
+.font-light() {
+  .corpo-fonte(300);
+}
+
+.font-normal() {
+  .corpo-fonte(400);
+}
+
+.font-medium() {
+  .corpo-fonte(500);
+}
+
+.font-semi-bold() {
+  .corpo-fonte(600);
+}
+
+.font-bold() {
+  .corpo-fonte(700);
+}
+
+.font-extra-bold() {
+  .corpo-fonte(800);
+}
+
+.font-ultra-bold() {
+  .corpo-fonte(900);
+}
+
+.mb(@e) {
+  margin-bottom: @e;
+}
+
+.mt(@e) {
+  margin-top: @e;
+}
+
+.linhah(@e) {
+  line-height: 20px;
+}
+
+.recuo() {
+  text-indent: 40px;
+}
+
+
+.mb10 {
+  .mb(10px);
+}
+
+.mb20 {
+  .mb(20px);
+}
+
+.mb30 {
+  .mb(30px);
+}
+
+.mb40 {
+  .mb(40px);
+}
+
+.mb50 {
+  .mb(50px);
+}
+
+.mb60 {
+  .mb(60px);
+}
+
+.mb70 {
+  .mb(70px);
+}
+
+.mb80 {
+  .mb(80px);
+}
+
+.mb90 {
+  .mb(90px);
+}
+
+.mb100 {
+  .mb(100px);
+}
+
+.mt10 {
+  .mt(10px);
+}
+
+.mt20 {
+  .mt(20px);
+}
+
+.mt30 {
+  .mt(30px);
+}
+
+.mt40 {
+  .mt(40px);
+}
+
+.mt50 {
+  .mt(50px);
+}
+
+.mt60 {
+  .mt(60px);
+}
+
+.mt70 {
+  .mt(70px);
+}
+
+.mt80 {
+  .mt(80px);
+}
+
+.mt90 {
+  .mt(90px);
+}
+
+.mt100 {
+  .mt(100px);
+}
+
+.mt_10 {
+  .mt(-10px);
+}
+
+.mt_20 {
+  .mt(-20px);
+}
+
+.mt_30 {
+  .mt(-30px);
+}
+
+.mt_40 {
+  .mt(-40px);
+}
+
+.mt_50 {
+  .mt(-50px);
+}
+
+.mt_60 {
+  .mt(-60px);
+}
+
+.mt_70 {
+  .mt(-70px);
+}
+
+.mt_80 {
+  .mt(-80px);
+}
+
+.mt_90 {
+  .mt(-90px);
+}
+
+.mt_100 {
+  .mt(-100px);
+}
+
+.mt_150 {
+  .mt(-150px);
+}
+
+.linha15 {
+  .linhah(15px);
+}
+
+.linha20 {
+  .linhah(20px);
+}
+
+.linha25 {
+  .linhah(25px);
+}
+
+.linha30 {
+  .linhah(30px);
+}
+
+.linha35 {
+  .linhah(35px);
+}
+
+.linha40 {
+  .linhah(40px);
+}
+
+.transition(@e) {
+  -webkit-transition: @e;
+  -moz-transition: @e;
+  -ms-transition: @e;
+  -o-transition: @e;
+  transition: @e;
+}
+
+.transition-transform(@e) {
+  -webkit-transition: -webkit-transform @e;
+  -moz-transition: -moz-transform @e;
+  -ms-transition: -ms-transform @e;
+  -o-transition: -o-transform @e;
+  transition: transform @e;
+}
+
+.transform(@e) {
+  transform: @e;
+  -ms-transform: @e;
+  -webkit-transform: @e;
+  -o-transform: @e;
+  -moz-transform: @e;
+}
+
+.animar(@e) {
+  .transition(All @e ease-in-out);
+}
+
+.animar-scale(@e) {
+  .transform(scale(@e));
+}

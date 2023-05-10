@@ -1,0 +1,14 @@
+{% extends "Usuario/View/layout-email.html.twig" %}
+{% set api = getApi() %}
+{% set linkRecuperar = 'http://'~api.painel%}
+{% block conteudo %}
+    <h4>Senha alterada</h4>
+
+    <p>Olá {{ usuario.nome.value }},</p>
+    <br>
+    <p>Sua senha foi alterada com sucesso.<p>
+    <p><strong><a href="{{ linkRecuperar }}" target="_blank">{{ linkRecuperar }}</a></strong></p>
+    <br>
+    <p>Caso o link não apareça, copie o endereço abaixo no seu navegador.</p>
+    <p><strong>{{ linkRecuperar }}</strong></p>
+{% endblock %}

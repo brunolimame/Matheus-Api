@@ -1,0 +1,14 @@
+{% extends "Usuario/View/layout-email.html.twig" %}
+{% set api = getApi() %}
+{% set linkRecuperar = 'http://'~api.painel~'/recuperar?chave='~usuario.chave.value %}
+{% block conteudo %}
+    <h4>Recupereação de conta</h4>
+
+    <p>Olá {{ usuario.nome.value }},</p>
+    <br>
+    <p>Recebemos sua solicitação para recuperação da sua conta, acesse o link abaixo para concluir o processo.<p>
+    <p><strong><a href="{{ linkRecuperar }}" target="_blank">{{ linkRecuperar }}</a></strong></p>
+    <br>
+    <p>Caso o link não apareça, copie o endereço abaixo no seu navegador.</p>
+    <p><strong>{{ linkRecuperar }}</strong></p>
+{% endblock %}

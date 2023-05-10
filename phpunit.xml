@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.3/phpunit.xsd"
+         backupGlobals="true"
+         backupStaticAttributes="false"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         forceCoversAnnotation="false"
+         processIsolation="false"
+         stopOnError="false"
+         stopOnFailure="false"
+         stopOnIncomplete="false"
+         stopOnSkipped="false"
+         stopOnRisky="false"
+         verbose="true"
+         testdox="true">
+  <testsuites>
+  <testsuite name="Boot">
+    <directory>app/boot/Test</directory>
+  </testsuite>
+  <testsuite name="App">
+    <directory>app/src/*/**/Test</directory>
+  </testsuite>
+</testsuites>
+</phpunit>

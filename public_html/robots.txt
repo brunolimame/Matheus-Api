@@ -1,0 +1,20 @@
+User-agent: *
+Disallow:
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /*.inc$
+Disallow: /*.gz$
+Disallow: /*.wmv$
+Disallow: /*.twig$
+Disallow: /*.tar$
+Disallow: /*.tgz$
+Disallow: /*.cgi$
+
+User-agent: Googlebot-Image
+Allow: /img/
+
+# permitir o adsense em qualquer url
+User-agent: Mediapartners-Google
+Allow: /
+
+Sitemap: /sitemap/sitemap.xml

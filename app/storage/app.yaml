@@ -1,0 +1,9 @@
+debug: true
+google:
+    analytics: { id: UA-40529411-30, script: universal }
+    maps: { key: AIzaSyBiWP-tn5RBtt6OSPtE717WEjdj5-zL-jU }
+    recaptcha: { key: 6LeUveAUAAAAAOKCkEgsmaTnHvMZqce_t3N7g7od, secret: 6LeUveAUAAAAAJmM2a_80MrsMdrwvnjCY4Y_cvgB }
+api:
+    https: false
+    site: site.cms.it
+    painel: painel.cms.it
